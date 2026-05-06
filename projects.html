@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <nav>
+      <a href="index.html" class="nav-name">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="fun.html">Fun</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="page-header">
+        <p class="section-label">Work</p>
+        <h1 class="page-title">Projects</h1>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-item">
+          <div>
+            <p class="project-year">2024</p>
+            <a class="project-name" href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">
+              Project One
+            </a>
+            <p class="project-desc">
+              A short description of what this project does and why you built it.
+              One or two sentences is plenty.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Open Source</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-item">
+          <div>
+            <p class="project-year">2024</p>
+            <a class="project-name" href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">
+              Project Two
+            </a>
+            <p class="project-desc">
+              Describe what makes this one interesting. What problem did it solve?
+              What did you learn from building it?
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-item">
+          <div>
+            <p class="project-year">2023</p>
+            <a class="project-name" href="#" target="_blank" rel="noopener">
+              Project Three
+            </a>
+            <p class="project-desc">
+              Another project, another story. Keep descriptions short —
+              let the work speak for itself.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Research</span>
+            </div>
+          </div>
+          <a class="project-link" href="#" target="_blank" rel="noopener">
+            View ↗
+          </a>
+        </article>
+
+        <!-- Duplicate an <article class="project-item"> block to add more projects -->
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-text">Your Name — <span id="year"></span></span>
+      <span class="footer-text">Made with care.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

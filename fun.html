@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <nav>
+      <a href="index.html" class="nav-name">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="fun.html" class="active">Fun</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="page-header">
+        <p class="section-label">Miscellaneous</p>
+        <h1 class="page-title">Fun things</h1>
+      </div>
+
+      <div class="fun-grid">
+
+        <!-- Section: Currently into -->
+        <section class="fun-section">
+          <p class="fun-section-label">Currently into</p>
+          <ul class="fun-items">
+            <li>Something you're reading, watching, or obsessing over</li>
+            <li>A hobby you picked up recently</li>
+            <li>A place you want to visit</li>
+          </ul>
+        </section>
+
+        <!-- Section: Favorites -->
+        <section class="fun-section">
+          <p class="fun-section-label">Favorites</p>
+          <ul class="fun-items">
+            <li>Your favorite book — and one sentence on why</li>
+            <li>A film or show you'd recommend to anyone</li>
+            <li>An album you've had on repeat</li>
+            <li>A meal you could eat every day</li>
+          </ul>
+        </section>
+
+        <!-- Section: Things I believe -->
+        <section class="fun-section">
+          <p class="fun-section-label">Things I believe</p>
+          <ul class="fun-items">
+            <li>A strong opinion you hold (lightly)</li>
+            <li>Something you've changed your mind about</li>
+            <li>One underrated thing more people should try</li>
+          </ul>
+        </section>
+
+        <!-- Section: Links -->
+        <section class="fun-section">
+          <p class="fun-section-label">Links I like</p>
+          <ul class="fun-items">
+            <li>
+              <a href="https://example.com" target="_blank" rel="noopener">
+                An interesting article, tool, or site worth sharing
+              </a>
+            </li>
+            <li>
+              <a href="https://example.com" target="_blank" rel="noopener">
+                Another link you keep coming back to
+              </a>
+            </li>
+            <li>
+              <a href="https://example.com" target="_blank" rel="noopener">
+                Something that made you think
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Add or remove sections freely -->
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-text">Your Name — <span id="year"></span></span>
+      <span class="footer-text">Made with care.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
